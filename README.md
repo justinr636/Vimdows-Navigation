@@ -31,6 +31,6 @@ Note that because of the way Quick Vim functions, you will have to use
 	v                                      yank mode; not perfect
    	                                           hit y after you're done selecting to copy
 	<#[cmd]>                               Run 'cmd' # times. E.g. 3dd, 4w, 10l, etc
-	u, <shift> u                           Undo, redo
+	u, <ctrl> r                            Undo, redo
 	/, n                                   Find, next found result (Uses Ctrl + F and F3)
 	

@@ -177,7 +177,7 @@ return
 +,::Send, {Home}{HOME}{Del}
 +.::Send, {Home}`t
 u::Send, ^z
-+u:: Send, ^y
+^r:: Send, ^y
 
 ; replace
 +r::Send, {Ins}
