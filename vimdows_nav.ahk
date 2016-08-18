@@ -29,6 +29,10 @@ vimModeOn := false
 
 +Esc::
 	vimModeOn := !vimModeOn
+	if (vimModeOn)
+		Menu, Tray, Icon
+	else
+		Menu, Tray, NoIcon
 return
 
 ;Esc::
