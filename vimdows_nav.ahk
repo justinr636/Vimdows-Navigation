@@ -232,6 +232,18 @@ return
 
 ^+!r::Reload
 
+; Pseudo Numpad
+\::PseudoNumPad("\\")
+Delete::PseudoNumPad("{Delete}")
+End::PseudoNumPad("{End}")
+PgDn::PseudoNumPad("{PgDn}")
+Insert::PseudoNumPad("{Insert}")
+Home::PseudoNumPad("{Home}")
+PgUp::PseudoNumPad("{PgUp}")
+PrintScreen::PseudoNumPad("{PrintScreen}")
+ScrollLock::PseudoNumPad("{ScrollLock}")
+Break::PseudoNumPad("{Break}")
+
 #IfWinExist
 
 ; ===== SubRoutines =====
@@ -267,4 +279,30 @@ Run_Mode() {
    Send {Left}{RIGHT}
    num =
    modal =
+}
+
+PseudoNumPad(key)
+{
+	if (key = "\\") {
+		Send, 0
+	} else if (key = "{Delete}") {
+		Send, 1
+	} else if (key = "{End}") {
+		Send, 2
+	} else if (key = "{PgDn}") {
+		Send, 3
+	} else if (key = "{Insert}") {
+		Send, 4
+	} else if (key = "{Home}") {
+		Send, 5
+	} else if (key = "{PgUp}") {
+		Send, 6
+	} else if (key = "{PrintScreen}") {
+		Send, 7
+	} else if (key = "{ScrollLock}") {
+		Send, 8
+	} else if (key = "{Break}") {
+		Send, 9
+	}
+	return
 }
